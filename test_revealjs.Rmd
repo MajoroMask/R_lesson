@@ -1,0 +1,64 @@
+---
+title: "R语言入门"
+subtitle: "第一讲 R的获取和安装"
+output: 
+  revealjs::revealjs_presentation:
+    incremental: false  # bullet是否渐进
+    theme: sky  # 主题，对应的css在library/revealjs/revealjs-3.3.0.1/css/theme下
+    center: true  # 垂直居中
+    highlight: espresso  # 划重点的方式……
+    transition: concave  # 幻灯片切换的方式
+    self_contained: false
+    reveal_plugins: ["search", "zoom", "notes", "chalkboard", "menu"]  
+    # reveal.js的插件老牛逼了
+    reveal_options: 
+      slideNumber: true
+      previewLinks: true
+      chalkboard: 
+        theme: chalkboard
+        toggleNotesButton: true
+      menu:
+        numbers: true
+# runtime: shiny
+---
+
+## R Markdown
+
+This is an R Markdown presentation. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. 
+
+<small>For more details on using R Markdown see <http://rmarkdown.rstudio.com>.</small>
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document.
+
+## Slide with Bullets
+
+>- Bullet 1
+>- Bullet 2
+>- Bullet 3
+
+## Use a zoom transition {data-transition="zoom"}
+
+## Slide with R Code and Output
+
+```{r}
+summary(cars)
+```
+
+## Slide with Plot
+
+```{r, echo=FALSE}
+plot(cars)
+```
+
+# Horizontal Slide 1
+
+## Vertical Slide 1
+Things will be on the screen.
+
+<aside class="notes">
+things will **NOT** be on the screen.
+</aside>
+
+## Vertical Slide 2
+
+# Horizontal Slide 2
